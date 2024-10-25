@@ -1,9 +1,8 @@
 "use client"
-import React, { useEffect, useState } from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github, Linkedin, Mail, ExternalLink, ChevronDown, Code, BookOpen, Trophy, Cpu } from "lucide-react";
+import { Github, Linkedin, Mail, Code, BookOpen, Trophy, Cpu } from "lucide-react";
 import { motion } from "framer-motion";
 
 const fadeIn = {
@@ -13,11 +12,7 @@ const fadeIn = {
 };
 
 const Page = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
+  
 
   const technicalSkills = [
     "C", "Java", "R", "Python", "SQL", "Linux", 
